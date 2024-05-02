@@ -1,0 +1,110 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+*{
+    box-sizing: border-box;
+}
+.container {
+    width: 100vw;
+    height:100vh;
+    background-color: rgb(39, 38, 38);
+}
+.main{
+    top:0;
+    height:60px;
+    width:100vw;
+    display: flex;
+    position: relative;
+   background-color: rgb(105, 105, 105);
+   align-items: center;
+   color: white;
+   box-shadow: 1px 1px 10px rgb(99, 99, 99);
+   
+}
+.myList {
+    width:100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ 
+}
+.myList > li{
+    width:90px;
+    font-size: 14px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin:0 10px 0 10px;
+    cursor: pointer;
+    user-select: none;
+   
+}
+.myList > li:hover {
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+}
+.header{
+    position:relative;
+    width:100vw;
+    height: auto;
+    margin:0;
+    padding:0;
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+@media  screen and (max-width:600px) {
+    .container {
+        width: 100vw;
+        height: auto;
+    }
+    .header {
+        min-height:400px;
+    }
+    .main,.myList {
+        position:fixed;
+    }
+}
+.header > .name {
+    font-size: 90px;
+    margin:0;
+    padding:0;
+    color:white;
+    font-weight:300;
+}
+.footer .job{
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+}
+.footer .myImg{
+    max-width: 200px;
+    max-height: 200px; 
+    width: auto; 
+    height: auto; 
+    border-radius: 100px;
+
+}
+.myImg:hover {
+    transform: scale(1.1);
+}
+.footer{
+    width:100vw;
+    height:auto;
+    display: flex;
+    justify-content: center;
+}
+.control1{
+    width:400px;
+    height:auto;
+    color:white;
+}
+.about1 {
+    text-align: left;
+}
